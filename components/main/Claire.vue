@@ -17,8 +17,10 @@
       <h1>Claire Chapman</h1>
 
       <p>Claire Chapman is a fictional classical pianist.
-        She was born in Beijing, began studying piano there at age six, and went on to study at the Central Conservatory of Music in Beijing and the Curtis Institute of Music in Philadelphia.
-        By the age of 21 she was already an internationally recognized concert pianist, giving recitals around the world.
+        She was born in Beijing, began studying piano there at age six, and went on to study at the Central Conservatory
+        of Music in Beijing and the Curtis Institute of Music in Philadelphia.
+        By the age of 21 she was already an internationally recognized concert pianist, giving recitals around the
+        world.
       </p>
 
       <img
@@ -26,7 +28,8 @@
         alt="">
 
       <div class="bar">
-
+        <p>Email me at: <br/>
+          cl.ch.pianist@gmail.com</p>
       </div>
 
     </div>
@@ -44,48 +47,111 @@
   @import '../../assets/css/variables.scss';
 
   section {
+    padding-left: 30px;
+    display: grid;
 
     .showcase {
       height: 30%;
       width: 100%;
       display: grid;
       grid-template-columns: repeat(3, auto);
-      margin: 50px 20px;
+      margin: 50px 0;
       justify-items: center;
-      grid-gap: 20px;
+      grid-gap: 10px;
 
       img {
         width: 100%;
       }
     }
 
-    .info{
+    .info {
       display: grid;
-      grid-template-areas:
-        "h h h h h"
-        "p p p i i"
-        "b b b b b"
-    ;
+      grid-template-areas: "h h h h h" "p p p i i" "b b b b b";
 
-      h1{
-        font-size: 4em;
+      grid-column-gap: 10px;
+      grid-row-gap: 25px;
+
+      h1 {
+        font-size: 4.5em;
+        letter-spacing: 1.5px;
         color: #161616;
         grid-area: h;
+        font-weight: 900;
       }
 
-      p{
+      p {
         grid-area: p;
+        color: #575757;
+        align-self: center;
+        font-weight: 400;
       }
 
-      img{
-        width: 200px;
+      img {
+        height: 210px;
         grid-area: i;
       }
 
-      .bar{
+      .bar {
         grid-area: b;
-        height: 50px;
+        height: 60px;
+        width: calc(100% + 30px);
+        transform: translateX(-30px);
         background-color: $blueen;
+        text-align: right;
+        padding-right: 20px;
+        padding-top: 10px;
+
+        p {
+          color: white;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  @media (min-height: 1000px) {
+    section {
+
+      .showcase {
+        margin-top: 80px;
+        margin-bottom: 130px;
+      }
+      .info {
+        grid-row-gap: 30px;
+
+        .bar {
+          height: 70px;
+        }
+
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    section {
+      padding-left: 0;
+      border-bottom: 1px solid #e7e7e7;
+
+      .showcase {
+        grid-row: 2;
+      }
+      .info {
+        grid-template-areas: "h h h h h" "p p p i i" "b b b b b";
+
+        h1 {
+          font-size: 2.5em;
+          text-align: center;
+        }
+
+        p {
+          font-size: 0.88em;
+        }
+        img {
+          height: 220px;
+        }
+        .bar {
+          display: none;
+        }
       }
     }
   }

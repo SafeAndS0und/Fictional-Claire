@@ -8,7 +8,7 @@
       <nuxt/>
     </div>
 
-    <Triangle/>
+    <Triangle class="triangle"/>
   </div>
 </template>
 
@@ -36,7 +36,20 @@
     }
 
     .after-column{
-      padding-left: 55px;
+      padding-left: 40px;
+    }
+
+    @media (max-width: 1300px) {
+      .left-column{
+        display: none;
+      }
+      .after-column{
+        padding: 0 10px;
+      }
+
+      .triangle{
+        display: none;
+      }
     }
   }
 </style>
@@ -61,6 +74,12 @@
   *:after {
     box-sizing: border-box;
     margin: 0;
+  }
+
+  @media (min-width: 1500px) {
+    html{
+      font-size: 19px;
+    }
   }
 
 </style>

@@ -18,6 +18,7 @@
   @import '../assets/css/variables.scss';
 
   .triangle{
+    z-index: -1;
     position: fixed;
     bottom: 0;
     right: 0;
