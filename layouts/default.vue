@@ -1,55 +1,68 @@
 <template>
   <div>
-    <nuxt />
+
+    <aside class="left-column"></aside>
+
+    <div class="after-column">
+      <Navbar/>
+      <nuxt/>
+    </div>
+
+    <Triangle/>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+  import Navbar from '../components/Navbar.vue'
+  import Triangle from '../components/Triangle.vue'
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
+  export default {
+    components: {Navbar, Triangle}
+  }
+</script>
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+<style scoped lang="scss">
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
+  div {
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+    .left-column {
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      left: 0;
+      width: 40px;
+      background-color: #2c2c2c;
+    }
+
+    .after-column{
+      padding-left: 55px;
+    }
+  }
 </style>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+  html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+</style>
+
+
