@@ -11,7 +11,7 @@
         <br/><br/>
       </p>
 
-      <h4>Interested? <span>Read More!</span></h4>
+      <h4>Like my writing? <span>Read my blog!</span></h4>
     </section>
 </template>
 
@@ -36,7 +36,7 @@
     p{
       font-size: 0.95em;
       font-weight: 400;
-      color: #47494d;
+      color: #686a6e;
     }
 
     h4{

@@ -59,6 +59,7 @@
       justify-items: center;
       grid-gap: 10px;
 
+
       img {
         width: 100%;
       }
@@ -83,7 +84,7 @@
         grid-area: p;
         color: #575757;
         align-self: center;
-        font-weight: 400;
+        font-weight: 500;
       }
 
       img {
@@ -139,7 +140,7 @@
         grid-template-areas: "h h h h h" "p p p i i" "b b b b b";
 
         h1 {
-          font-size: 2.5em;
+          font-size: 2.2em;
           text-align: center;
         }
 
@@ -147,7 +148,8 @@
           font-size: 0.88em;
         }
         img {
-          height: 220px;
+          height: 160px;
+          border-radius: 20px;
         }
         .bar {
           display: none;
