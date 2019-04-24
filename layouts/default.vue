@@ -76,9 +76,9 @@
     margin: 0;
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1600px) {
     html{
-      font-size: 19px;
+      font-size: 20px;
     }
   }
 

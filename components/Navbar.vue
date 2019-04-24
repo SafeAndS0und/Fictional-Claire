@@ -10,24 +10,36 @@
     </div>
 
     <ul :class="{mobileNav: unfolded}" @click="changeMenuItem($event)">
-      <nuxt-link class="active" to="/">
-        <li>Home</li>
-      </nuxt-link>
-      <nuxt-link to="/biography">
-        <li>Biography</li>
-      </nuxt-link>
-      <nuxt-link to="#">
-        <li>Compositions</li>
-      </nuxt-link>
-      <nuxt-link to="#">
-        <li>Concerts</li>
-      </nuxt-link>
-      <nuxt-link to="#">
-        <li>Blog</li>
-      </nuxt-link>
-      <nuxt-link to="#">
-        <li>Links</li>
-      </nuxt-link>
+      <li class="active">
+        <nuxt-link to="/">
+          Home
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/biography">
+          Biography
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/compositions">
+          Compositions
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/concerts">
+          Concerts
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/blog">
+          Blog
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="#">
+          Links
+        </nuxt-link>
+      </li>
     </ul>
 
     <div class="bottom-triangle" v-if="unfolded">
@@ -48,8 +60,13 @@
     },
     methods: {
       changeMenuItem(e){
-        // console.dir(e.target.parentElement)
-        Array.from(e.target.parentElement.parentElement.children).forEach(child => {
+
+        if(e.target.parentElement.nodeName === "UL")
+          return
+
+        this.unfolded = false
+
+        Array.from(e.target.parentElement.parentElement.children).forEach(child =>{
 
           child.className = ''
         })
@@ -83,19 +100,21 @@
       grid-gap: 10px;
       transition: 0.3s;
 
-      a{
+      a {
         text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+        padding: 6px;
       }
 
-      a {
+      li {
         font-size: .95em;
         font-weight: 300;
         text-align: center;
-        color: #636363;
         padding: 10px 12px;
-        cursor: pointer;
         position: relative;
         transition: .5s;
+        color: #6d6f76;
 
         &:after {
           position: absolute;

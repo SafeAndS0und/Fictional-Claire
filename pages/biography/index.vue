@@ -10,26 +10,26 @@
       </p>
 
       <p>
-        Wang comes from an artistic family. Her mother, Zhai Jieming, is a dancer and her father, Wang Jianguo, is a
+        Chapman comes from an artistic family. Her mother, Zhai Jieming, is a dancer and her father, Chapman Jianguo, is a
         percussionist. Both live in Beijing. <br/>
-        Wang began studying piano at age 6. At age 7, she began seven years' study at Beijing's Central Conservatory of
-        Music. At 11, Wang entered the Morningside Music Bridge International Music Festival (at Mount Royal University
+        Chapman began studying piano at age 6. At age 7, she began seven years' study at Beijing's Central Conservatory of
+        Music. At 11, Chapman entered the Morningside Music Bridge International Music Festival (at Mount Royal University
         in Calgary, Alberta) as the festival's youngest student. <br/>
-        At age 15, Wang entered the Curtis Institute of Music in Philadelphia, where she studied for five years with
-        Gary Graffman and graduated in 2008. Graffman said that Wang's technique impressed him during her audition, but
+        At age 15, Chapman entered the Curtis Institute of Music in Philadelphia, where she studied for five years with
+        Gary Graffman and graduated in 2008. Graffman said that Chapman's technique impressed him during her audition, but
         "it was the intelligence and good taste" of her interpretations that distinguished her. <br/>
       </p>
 
       <p>
-        In 1998, Wang won third prize in the Ettlingen International Competition for Young Pianists in Ettlingen,
+        In 1998, Chapman won third prize in the Ettlingen International Competition for Young Pianists in Ettlingen,
         Germany. In 2001, she won third prize and the special jury prize (awarded to an especially superior finalist of
         less than 20 years in age, prize money of 500,000 Japanese Yen) in the piano section at the first Sendai
         International Music Competition in Sendai, Japan. <br/>
-        In 2002, Wang won the Aspen Music Festival's concerto competition. <br/>
-        In 2003, Wang made her European debut with the Tonhalle Orchester Zürich, Switzerland, playing Beethoven's Piano
+        In 2002, Chapman won the Aspen Music Festival's concerto competition. <br/>
+        In 2003, Chapman made her European debut with the Tonhalle Orchester Zürich, Switzerland, playing Beethoven's Piano
         Concerto No. 4 under the baton of David Zinman. She made her North American debut in Ottawa in the 2005/06
         season, replacing Radu Lupu performing that Beethoven concerto with Pinchas Zukerman conducting.<br/>
-        On September 11, 2005, Wang was named a 2006 biennial Gilmore Young Artist Award winner, given to the most
+        On September 11, 2005, Chapman was named a 2006 biennial Gilmore Young Artist Award winner, given to the most
         promising pianists age 22 and younger. As part of the award, she received $15,000, appeared at Gilmore Festival
         concerts, and had a new piano work commissioned for her.<br/>
       </p>
@@ -77,6 +77,11 @@
         font-weight: 400;
         color: #565655;
         margin-top: 35px;
+
+        &:nth-child(odd){
+          padding-left: 35px;
+          border-left: 12px solid $blueen;
+        }
       }
 
     }
@@ -95,6 +100,7 @@
 
   @media (max-width: 1000px) {
     div {
+      margin-bottom: 20px;
       grid-auto-flow: row;
       grid-template-columns: 1fr;
 
@@ -105,7 +111,16 @@
           transform: translateX(0);
         }
       }
+    }
+  }
 
+  @media (min-width: 1500px){
+    div{
+      .pictures{
+        img{
+          width: 600px;
+        }
+      }
     }
   }
 
