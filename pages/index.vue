@@ -43,7 +43,7 @@
       transform: translateX(-10px);
 
       .mail {
-        background-color: #232323;
+        background-color: $asideGrey;
         color: $blueen;
         text-align: center;
         font-weight: 700;

@@ -24,6 +24,8 @@
 
 <style scoped lang="scss">
 
+  @import '../assets/css/variables';
+
   div {
 
     .left-column {
@@ -32,7 +34,7 @@
       height: 100vh;
       left: 0;
       width: 40px;
-      background-color: #2c2c2c;
+      background-color: $asideGrey;
     }
 
     .after-column{

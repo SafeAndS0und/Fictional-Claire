@@ -65,7 +65,7 @@
       h1 {
         font-size: 3em;
         font-weight: 900;
-        background-color: #2c2c2c;
+        background-color: $asideGrey;
         color: $blueen;
         text-align: right;
         transform: translateX(-20px);
