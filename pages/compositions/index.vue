@@ -2,11 +2,10 @@
   <div>
     <article>
       <div class="details">
-        <h3>Arrangament of Mozart's "Turkish March"</h3>
+        <h3>Turkish March</h3>
         <p>The Piano Sonata No. 11 in A major, K. 331 / 300i, by Wolfgang Amadeus Mozart is a piano sonata in three
           movements.
           <br/><br/>
-
           The sonata was published by Artaria in 1784, alongside Nos. 10 and 12 (K. 330 and K. 332).
         </p>
       </div>
@@ -29,7 +28,7 @@
 
     <article>
       <div class="details">
-        <h3>Brahm's Variations on Paganini's Theme</h3>
+        <h3>Brahms Variations</h3>
         <p>Brahms intended the work to be more than simply a set of theme and variations; each variation also has the characteristic of a study. He published it as Studies for Pianoforte: Variations on a Theme of Paganini.
           It is uncharacteristically showy for Brahms, even Lisztian. Indeed, the work was composed for the piano virtuoso Carl Tausig.
         </p>
@@ -55,12 +54,12 @@
   div {
 
     display: block;
-    width: 60%;
+    width: 70%;
     margin: 40px 0;
 
     article {
       display: grid;
-      grid-template-columns: 1fr .8fr;
+      grid-template-columns: 1fr .85fr;
       grid-gap: 10px;
       padding: 12px;
       padding-left: 30px;

@@ -78,4 +78,14 @@
 
   }
 
+  @media (max-width: 1000px) {
+    div{
+      width: 100%;
+
+      article {
+        padding: 10px;
+      }
+    }
+  }
+
 </style>

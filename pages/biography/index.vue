@@ -109,6 +109,13 @@
         h1 {
           text-align: center;
           transform: translateX(0);
+          padding: 12px;
+        }
+      }
+
+      .pictures{
+        img{
+          width: 100%;
         }
       }
     }
