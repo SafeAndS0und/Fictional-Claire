@@ -89,9 +89,9 @@
     .programmes {
 
       article {
-        background-color: #141414;
+        background-color: #0f0f0f;
         color: white;
-        padding: 20px;
+        padding: 27px;
         border-bottom: 10px solid $asideGrey;
 
         h3 {
@@ -118,7 +118,7 @@
         ul {
           margin: 10px 0;
           padding: 5px;
-          background-color: #171717;
+          background-color: #101112;
 
           h3 {
             font-size: 1.4em;
@@ -133,6 +133,18 @@
             font-weight: 300;
           }
         }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    div {
+      width: 100%;
+
+      h1{
+        text-align: center;
+        font-size: 2.5em;
+        padding: 10px 0;
       }
     }
   }

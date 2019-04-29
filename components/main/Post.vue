@@ -53,7 +53,8 @@
 
   @media (max-width: 800px) {
     .post{
-      padding: 70px 0;
+      padding: 70px 10px;
+
 
       h2{
         font-size: 2em;

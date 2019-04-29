@@ -46,7 +46,7 @@
         display: none;
       }
       .after-column{
-        padding: 0 10px;
+        padding: 0;
       }
 
       .triangle{

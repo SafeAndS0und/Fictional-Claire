@@ -67,6 +67,7 @@
   @media (min-height: 1000px) {
     main {
       align-items: center;
+
     }
   }
 
