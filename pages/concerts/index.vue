@@ -107,8 +107,8 @@
       }
 
       .repertoire {
-        text-align: center;
         width: 100%;
+        margin-top: 50px;
 
         h2 {
           font-size: 2em;
@@ -118,7 +118,6 @@
         ul {
           margin: 10px 0;
           padding: 5px;
-          background-color: #101112;
 
           h3 {
             font-size: 1.4em;
@@ -126,7 +125,8 @@
           }
 
           li {
-            list-style: none;
+            list-style-type: disc;
+            margin-left: 20px;
             font-size: .95em;
             font-style: italic;
             padding: 3px 0;
