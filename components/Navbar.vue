@@ -20,11 +20,7 @@
           Biography
         </nuxt-link>
       </li>
-      <li>
-        <nuxt-link to="/compositions">
-          Compositions
-        </nuxt-link>
-      </li>
+
       <li>
         <nuxt-link to="/concerts">
           Concerts

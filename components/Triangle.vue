@@ -2,7 +2,10 @@
 
   <div class="triangle">
     <p>Written By Nikodem Lorenz</p>
-    <v-icon name="brands/github" scale="2.5" class="github"/>
+
+    <a class="github" href="https://github.com/SafeAndS0und/Fictional-Claire" target="_blank">
+      <v-icon name="brands/github" class="icon" scale="2.5"/>
+    </a>
   </div>
 
 </template>

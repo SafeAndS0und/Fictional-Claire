@@ -115,7 +115,8 @@
 
       .pictures{
         img{
-          width: 100%;
+          margin: auto;
+          width: 90%;
         }
       }
     }

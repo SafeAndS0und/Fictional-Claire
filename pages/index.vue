@@ -10,9 +10,9 @@
           cl.ch.pianist@gmail.com</p>
       </div>
 
-      <div class="github">
+      <a class="github" href="https://github.com/SafeAndS0und/Fictional-Claire" target="_blank">
         <v-icon name="brands/github" class="icon" scale="2"/>
-      </div>
+      </a>
 
     </footer>
   </main>
@@ -39,8 +39,7 @@
 
     footer {
       display: none;
-      width: calc(100% + 20px);
-      transform: translateX(-10px);
+      width: 100%;
 
       .mail {
         background-color: $asideGrey;
@@ -50,7 +49,9 @@
         font-size: .9em;
         padding: 20px 0;
       }
+
       .github{
+        cursor: pointer;
         background-color: $blueen;
         color: white;
         display: grid;
