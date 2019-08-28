@@ -1,8 +1,11 @@
 # fictional-claire
 
-> Personal website of a fictional Pianist - Claire
+Fictional Claire is a personal website of a classical pianist, Claire. And yes, you've guessed it - she doesn't exist irl. 
+It's a simple website, I focused on showing my perspective on style and design which is probably not so great. 💁‍♀️
 
-## Build Setup
+Click [here](https://safeands0und.github.io/Fictional-Claire/) to see it live. 
+
+<hr>
 
 ``` bash
 # install dependencies
@@ -19,4 +22,3 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
